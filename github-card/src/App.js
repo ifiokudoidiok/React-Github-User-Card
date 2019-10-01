@@ -2,6 +2,9 @@ import React from 'react';
 import GithubUser from './components/GithubUser';
 import Followers from './components/Followers';
 
+import lambdalogo from './assets/lambdalogo.png';
+import githublogo from './assets/githublogo.png';
+
 import './App.css';
 
 class  App extends React.Component {
@@ -12,7 +15,14 @@ class  App extends React.Component {
 
     return (
       <div className="App">
-        App page(Serve as Navigation/Route)
+        <div className="header">
+
+         <img src={lambdalogo} alt="Lambda Logo"/>
+        <span>❤️'s</span>
+        <img src={githublogo} alt="GitHub Logo" />
+        </div>
+     
+       
         <GithubUser/>
         <Followers/>
 
